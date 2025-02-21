@@ -1,3 +1,3 @@
-import { HelloWorldPluginModule } from './lib';
+import { HelloWorldPluginModule } from './lib/helloWorld';
 
 export default HelloWorldPluginModule;

@@ -1,20 +1,25 @@
 {
   "name": "@df/hello-world",
   "version": "1.0.3",
-  "main": "index.js",
+  "description": "Simple hello world governance plugin",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cp dist/index.js .",
+    "prepare": "npm run build",
     "clean": "rm -rf dist/"
   },
-  "bundledDependencies": true,
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "@df/sdk": "^1.2.1"
+    "@df/sdk": "^1.2.1",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "@types/lodash": "^4.17.15",
     "typescript": "^5.7.3"
-  }
+  },
+  "bundleDependencies": [
+    "@df/sdk"
+  ]
 }
